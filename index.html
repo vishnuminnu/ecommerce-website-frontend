@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!--This is the css file-->
+  <link href="demo.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body >
+  <!--This is the html content-->
+  <!--This is header section-->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a class="navbar-brand" href="#"><i class="fa-fade"><img src="logo2.png" alt="logo" width="120px" height="120px"></i></a>
+     <form class="form-control" >
+        <input type="text" placeholder="search" id="search">
+        <button type="button" id="btn">search</button>
+      </form>
+      
+      <button type="button" id="login" onclick="location.href='login.html'">Login</button>
+      <h1 style="font-size: 30px;" id="cart" onclick="location.href='cart.html'"  ><i class="fa-solid fa-cart-shopping"></i></h1>
+    <h1 style="font-size: 30px;" id="toggle"><i class="fa-solid fa-bars"></i></h1>
+    </div>
+  </nav>
+<nav class="navbar2" >
+    <ul class="navbar-items" style="list-style: none;">
+      <li id="list" style="color: cadetblue;"><a class="nav-link">Home</a></li>
+      <li id="list" onclick="location.href='product.html'" ><a class="nav-link" >All Products</a></li>
+      <li class="dropdown" >
+        <a class="nav-link" id="dropbtn" onclick="toggleDropdown()" style="margin-left: 75px;">Women <i class="fa-solid fa-caret-down" style="color: plum;"></i></a>
+        <ul class="dropdown-content" style="list-style: none; margin-left: 60px; " id="myDropdown">
+          <li class="dropdown-item" onclick="location.href='women.html'"><a >All products</a></li>
+          <li class="dropdown-item" onclick="location.href='wdresses.html'"><a>Dresses</a></li>
+          <li class="dropdown-item" onclick="location.href='wpants.html'"><a>Pants</a></li>
+          <li class="dropdown-item" onclick="location.href='wskirts.html'"><a>Skirts</a></li>
+        </ul>
+      </li>
+      <li class="dropdown" >
+        <a class="nav-link" id="dropbtnx" onclick="toggleDropdownx()" style="margin-left: 75px;">Men <i class="fa-solid fa-caret-down" style="color: plum;"></i></a>
+        <ul class="dropdown-content" style="list-style: none; margin-left: 60px; " id="myDropdownx">
+          <li class="dropdown-item"onclick="location.href='men.html'">All products</a></li>
+          <li class="dropdown-item" onclick="location.href='mshirt.html'"><a>Shirts</a></li>
+          <li class="dropdown-item" onclick="location.href='mpants.html'"><a>Pants</a></li>
+          <li class="dropdown-item" onclick="location.href='mhoodies.html'"><a>Hoodies</a></li>
+        </ul>
+      </li>
+      <li id="list"  onclick="location.href='kids.html'"><a class="nav-link">Kids</a></li>
+      <li id="list" onclick="location.href='contact.html'"><a class="nav-link">Contact</a></li>
+    </ul> 
+</nav>
+<div class="background">
+  <img src="logo2.png" alt="background" id="imagelogo" >
+  
+  <h4 class="text" style="font-size: 16px; color: rgb(219, 240, 240);text-align: center; margin-top: -10px;"><i>"Fashion is the armor to survive the reality of everyday life"</i></h4>
+</div>
+<div class="swipe">
+  <h1 style="text-align: center;font-weight: 800;  font-size: 30px;"  >Featured Products</h1>
+  <!--This is swiper -->
+<div class="swiper-container">
+  <!--This is swiper wrapper-->
+  <div class="swiper-wrapper">
+    <!--This is swiper slide-->
+    <div class="swiper-slide">
+      <div class="card">
+        <img src="images/slide1.webp" alt="slide1" width="100%"  class="slide"><br>
+        <div class="card-body">
+          <h2 class="card-title">Red dress</h2><br>
+          <h3 class="card-title">$20</h3><br>
+          <h4 class="card-text">Red Cotton Cut Out Maxi Dress</h4><br><br><br>
+          <button type="submit" class="add" onclick="location.href='cart.html'"><i class="fa-solid fa-cart-shopping"></i>  Add to cart</button>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-slide"><div class="card">
+      <img src="images/slide3.avif" alt="slide1" width="100%"  class="slide"><br>
+      <div class="card-body">
+        <h2 class="card-title">Teal Blue pant</h2><br>
+        <h3 class="card-title">$110</h3><br>
+        <h4 class="card-text">Men's Linen Trousers Teal Blue </h4><br><br><br>
+        <button type="submit" class="add" onclick="location.href='cart.html'"><i class="fa-solid fa-cart-shopping"></i>  Add to cart</button>
+      </div>
+    </div></div>
+    <div class="swiper-slide"><div class="card">
+      <img src="images/slide3.webp" alt="slide1" width="100%"  class="slide"><br>
+      <div class="card-body">
+        <h2 class="card-title">Pink & Orange dress</h2><br>
+        <h3 class="card-title">$95</h3><br>
+        <h4 class="card-text">Pink & Orange Floral Printed</h4><br><br><br>
+        <button type="submit" class="add" onclick="location.href='cart.html'"><i class="fa-solid fa-cart-shopping"></i>  Add to cart</button>
+      </div>
+    </div>
+  </div>
+    <div class="swiper-slide"><div class="card">
+      <img src="images/slide4.webp" alt="slide1" width="100%"  class="slide"><br>
+      <div class="card-body">
+        <h2 class="card-title">Rare Rabbit</h2><br>
+        <h3 class="card-title">$60</h3><br>
+        <h4 class="card-text">Checked Cotton Shirt</h4><br><br><br>
+        <button type="submit" class="add" onclick="location.href='cart.html'"><i class="fa-solid fa-cart-shopping"></i>  Add to cart</button>
+      </div>
+    </div>
+  </div>
+    <div class="swiper-slide"><div class="card">
+      <img src="images/slide5.webp" alt="slide1" width="100%"  class="slide"><br>
+      <div class="card-body">
+        <h2 class="card-title">HERE & NOW</h2><br>
+        <h3 class="card-title">$20</h3><br>
+        <h4 class="card-text">Men White Regular Fit Solid Sustainable Casual Shirt</h4><br><br>
+        <button type="submit" class="add"><i class="fa-solid fa-cart-shopping"></i>  Add to cart</button>
+      </div>
+    </div>
+  </div>
+    <div class="swiper-slide"><div class="card">
+      <img src="images/slide6.webp" alt="slide1" width="100%"  class="slide"><br>
+      <div class="card-body">
+        <h2 class="card-title">Tiered Dress</h2><br>
+        <h3 class="card-title">$40</h3><br>
+        <h4 class="card-text">Multicolored Cotton Tiered Dress</h4><br><br><br>
+        <button type="submit" class="add" onclick="location.href='cart.html'"><i class="fa-solid fa-cart-shopping"></i>  Add to cart</button>
+      </div>
+    </div>
+  </div>
+    <div class="swiper-slide">
+      <div class="card">
+        <img src="images/slide7.webp" alt="slide1" width="100%"  class="slide"><br>
+        <div class="card-body">
+          <h2 class="card-title">Red dress</h2><br>
+          <h3 class="card-title">$20</h3><br>
+          <h4 class="card-text">Red Cotton Cut Out Maxi Dress</h4><br><br><br>
+          <button type="submit" class="add" onclick="location.href='cart.html'"><i class="fa-solid fa-cart-shopping"></i>  Add to cart</button>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="card">
+        <img src="images/slide8.webp" alt="slide1" width="100%"  class="slide"><br>
+        <div class="card-body">
+          <h2 class="card-title">Black shirt</h2><br>
+          <h3 class="card-title">$20</h3><br>
+          <h4 class="card-text">Black-Green Cotton Cut Out Shirt</h4><br><br><br>
+          <button type="submit" class="add"><i class="fa-solid fa-cart-shopping"></i>  Add to cart</button>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="card">
+        <img src="images/slide9.webp" alt="slide1" width="100%"  class="slide"><br>
+        <div class="card-body">
+          <h2 class="card-title">Green dress</h2><br>
+          <h3 class="card-title">$20</h3><br>
+          <h4 class="card-text">Green Cotton Cut Out Maxi Dress</h4><br><br><br>
+          <button type="submit" class="add" onclick="location.href='cart.html'"><i class="fa-solid fa-cart-shopping"></i>  Add to cart</button>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="card">
+        <img src="images/slide10.webp" alt="slide1" width="100%"  class="slide"><br>
+        <div class="card-body">
+          <h2 class="card-title">Green dress</h2><br>
+          <h3 class="card-title">$45</h3><br>
+          <h4 class="card-text">Pspeaches Sleeveless Jaipuri Floral Printed Kurta With Coordinating Flared Lehenga</h4><br>
+          <button type="submit" class="add"><i class="fa-solid fa-cart-shopping"></i>  Add to cart</button>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="card">
+        <img src="images/slide11.webp" alt="slide1" width="100%"  class="slide"><br>
+        <div class="card-body">
+          <h2 class="card-title">Navy-Blue Tshirt</h2><br>
+          <h3 class="card-title">$70</h3><br>
+          <h4 class="card-text">CrayonFlakes Blocks Printed Tshirt Short Set</h4><br><br><br>
+          <button type="submit" class="add" onclick="location.href='cart.html'"><i class="fa-solid fa-cart-shopping"></i>  Add to cart</button>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="card">
+        <img src="images/slide12.webp" alt="slide1" width="100%"  class="slide"><br>
+        <div class="card-body">
+          <h2 class="card-title">Cream shirt</h2><br>
+          <h3 class="card-title">$50</h3><br>
+          <h4 class="card-text">Tiber Taber Half Sleeves  Fish Motif Printed Ethnic Shirt</h4><br><br>
+          <button type="submit" class="add" onclick="location.href='cart.html'"><i class="fa-solid fa-cart-shopping"></i>  Add to cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="swiper-pagination"></div>
+  <div class="swiper-button-next" style="color: rgb(248, 119, 181);"></div>
+    <div class="swiper-button-prev" style="color: rgb(248, 119, 181);"></div>
+</div>
+</div>
+<script>
+  var swiper = new Swiper('.swiper-container', {
+    // Configuration options
+    slidesPerView: '4',
+    spaceBetween: 30,
+    slidesPerGroup: 4,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        
+      },
+      breakpoints:{
+        320:{
+          slidesPerView:1,
+        },
+        520:{
+          slidesPerView:2,
+
+        },
+        768:{
+          slidesPerView:3,
+        },
+        1124:{
+          slidesPerView:4,
+        }
+      },
+    // Add more options as needed
+  });
+</script>
+<!--This is footer section-->
+<footer class="footer">
+  <div class="grid-container" >
+   <div class="grid-item">
+    <h3>Women</h3>
+    <ul style="list-style: none;">
+      <li class="list-item"><a href="women.html"style="color: black;">Dresses</a></li>
+      <li class="list-item"><a href="women.html"style="color: black;">Pants</a></li>
+      <li class="list-item"><a href="women.html"style="color: black;">Skirts</a></li> <li class="list-item"></li>
+    </ul>
+   </div>
+   <div class="grid-item" >
+    <h3>Men</h3>
+    <ul style="list-style: none;">
+      <li class="list-item"><a href="men.html"style="color: black;">Shirts</a></li>
+      <li class="list-item"><a href="men.html"style="color: black;">Pants</a></li>
+      <li class="list-item"><a href="men.html"style="color: black;">Hoodies</a></li> <li class="list-item"></li>
+    </ul>
+   </div>
+   <div class="grid-item">
+    <h3>Kids</h3>
+    <ul style="list-style: none;">
+      <li class="list-item"><a href="kids.html"style="color: black;">Dresses</a></li>
+    </ul>
+   </div>
+   <div class="grid-item">
+    <h3>Links</h3>
+    <ul style="list-style: none;">
+      <li class="list-item"><a href="#"style="color: black;">Home</a></li>
+      <li class="list-item"><a href="login.html"style="color: black;">Login</a></li>
+      <li class="list-item"><a href="contact.html"style="color: black;">Contact</a></li> <li class="list-item"></li>
+    </ul>
+   </div>
+  </div>
+  <h5 style="text-align: center;height: 20px;padding-top: 20px;border-top: 1px solid black;margin: 20px;">Copyright &#169Ecommerce 2022-23</h5>
+</footer>
+  <script src="demo.js"></script>
+  <!--This is script tag--> 
+  <script>
+  toggle=document.querySelector("#toggle");
+  toggle.onclick=function(){
+    navBar=document.querySelector(".navbar");
+    navBar.classList.toggle("active")
+    
+  }
+  function toggleDropdown(){
+    var dropdownContent=document.getElementById("myDropdown");
+    if(dropdownContent.style.display==="block"){
+      dropdownContent.style.display="none";
+    }else{
+      dropdownContent.style.display="block";
+    }
+    
+  }
+  function toggleDropdownx(){
+    var dropdownContent=document.getElementById("myDropdownx");
+    if(dropdownContent.style.display==="block"){
+      dropdownContent.style.display="none";
+    }else{
+      dropdownContent.style.display="block";
+    }
+    
+  }
+  </script>
+</body>
+</html>

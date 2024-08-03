@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--This is the css file-->
+  <link href="demo.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body style="background-color:#210101 ;">  
+   <!--This is the html content-->
+   <!--This is header section-->
+    <nav class="navbar">
+        <div class="navbar-container">
+          <a class="navbar-brand" href="#"><img src="logo2.png" alt="logo" width="120px" height="120px"></a>
+         <form class="form-control" >
+            <input type="text" placeholder="search" id="search">
+            <button type="button" id="btn">search</button>
+          </form>
+          
+          <button type="button" id="login" onclick="location.href='login.html'">Login</button>
+          <h1 style="font-size: 30px;" id="cart" onclick="location.href='cart.html'"  ><i class="fa-solid fa-cart-shopping"></i></h1>
+        <h1 style="font-size: 30px;" id="toggle"><i class="fa-solid fa-bars"></i></h1>
+        </div>
+      </nav>
+  <nav class="navbar2" >
+      <ul class="navbar-items" style="list-style: none;">
+        <li id="list"><a class="nav-link" onclick="location.href='index.html'">Home</a></li>
+        <li id="list" onclick="location.href='product.html'"  ><a class="nav-link" >All Products</a></li>
+        <li class="dropdown" style="color: cadetblue;" >
+          <a class="nav-link" id="dropbtn" onclick="toggleDropdown()" style="margin-left: 75px;">Women <i class="fa-solid fa-caret-down" style="color: plum;"></i></a>
+          <ul class="dropdown-content" style="list-style: none; margin-left: 60px; " id="myDropdown">
+            <li class="dropdown-item" onclick="location.href='women.html'"><a >All products</a></li>
+            <li class="dropdown-item" onclick="location.href='wdresses.html'"><a>Dresses</a></li>
+            <li class="dropdown-item" onclick="location.href='wpants.html'"><a>Pants</a></li>
+            <li class="dropdown-item" onclick="location.href='wskirts.html'"><a>Skirts</a></li>
+          </ul>
+        </li>
+        <li class="dropdown" >
+          <a class="nav-link" id="dropbtnx" onclick="toggleDropdownx()" style="margin-left: 75px;">Men <i class="fa-solid fa-caret-down" style="color: plum;"></i></a>
+          <ul class="dropdown-content" style="list-style: none; margin-left: 60px; " id="myDropdownx">
+            <li class="dropdown-item"onclick="location.href='men.html'">All products</a></li>
+            <li class="dropdown-item" onclick="location.href='mshirt.html'"><a>Shirts</a></li>
+            <li class="dropdown-item" onclick="location.href='mpants.html'"><a>Pants</a></li>
+            <li class="dropdown-item" onclick="location.href='mhoodies.html'"><a>Hoodies</a></li>
+          </ul>
+        </li>
+        <li id="list"  onclick="location.href='kids.html'"><a class="nav-link">Kids</a></li>
+        <li id="list"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul> 
+  </nav>
+  <div class="product-background" >
+    <h1 style="color: rgb(237, 173, 173); text-align: center; margin-top: 30px; font-size: 40px;">Dresses</h1><br>
+  <div class="productgrid-container" style="justify-content: center;">
+    <div class="productgrid-item" style="border: 1px solid white; width: 300px; height: 520px; text-align: center;">
+      <div class="card1">
+        <img src="images/slide1.webp" alt="slide1" width="100%" height="300px"  class="slide1"><br>
+        <div class="card-body">
+          <h2 class="card-title">Red dress</h2><br>
+          <h3 class="card-title">$20</h3><br>
+          <h4 class="card-text">Red Cotton Cut Out Maxi Dress</h4><br><br><br>
+          <button type="submit" class="add"><i class="fa-solid fa-cart-shopping"></i>  Add to cart</button>
+        </div>
+      </div>
+     </div>
+     <div class="productgrid-item" style="border: 1px solid white; width: 300px; height: 520px; text-align: center;">
+      <div class="card1">
+        <img src="images/slide3.webp" alt="slide1" width="100%" height="300px"  class="slide1"><br>
+        <div class="card-body">
+          <h2 class="card-title">Pink & Orange Dress</h2><br>
+          <h3 class="card-title">$20</h3><br>
+          <h4 class="card-text">Pink & Orange Floral Print</h4><br><br><br>
+          <button type="submit" class="add"><i class="fa-solid fa-cart-shopping"></i>  Add to cart</button>
+        </div>
+      </div>
+     </div>
+   
+   
+   <div class="productgrid-item" style="border: 1px solid white; width: 300px; height: 520px; text-align: center;">
+    <div class="card1">
+      <img src="images/slide7.webp" alt="slide1" width="100%" height="300px"  class="slide1"><br>
+      <div class="card-body">
+        <h2 class="card-title">Red dress</h2><br>
+        <h3 class="card-title">$20</h3><br>
+        <h4 class="card-text">Red Cotton Cut Out Maxi Dress</h4><br><br><br>
+        <button type="submit" class="add"><i class="fa-solid fa-cart-shopping"></i>  Add to cart</button>
+      </div>
+    </div>
+   </div>
+   <div class="productgrid-item" style="border: 1px solid white; width: 300px; height: 520px; text-align: center;">
+    <div class="card1">
+      <img src="images/slide9.webp" alt="slide1" width="100%" height="300px"  class="slide1"><br>
+      <div class="card-body">
+        <h2 class="card-title">Green dress</h2><br>
+        <h3 class="card-title">$20</h3><br>
+        <h4 class="card-text">Green Cotton Cut Out Maxi Dress</h4><br><br><br>
+        <button type="submit" class="add"><i class="fa-solid fa-cart-shopping"></i>  Add to cart</button>
+      </div>
+    </div>
+   </div>
+   
+  </div>
+  </div><br>
+  <!--This is footer section-->
+  <footer class="footer" >
+    <div class="grid-container" >
+     <div class="grid-item">
+      <h3>Women</h3>
+      <ul style="list-style: none;">
+        <li class="list-item"><a href="women.html" style="color: black;">Dresses</a></li>
+        <li class="list-item"><a href="women.html" style="color: black;">Pants</a></li>
+        <li class="list-item"><a href="women.html" style="color: black;">Skirts</a></li> <li class="list-item"></li>
+      </ul>
+     </div>
+     <div class="grid-item" >
+      <h3>Men</h3>
+      <ul style="list-style: none;">
+        <li class="list-item"><a href="men.html" style="color: black;">Shirts</a></li>
+        <li class="list-item"><a href="men.html" style="color: black;">Pants</a></li>
+        <li class="list-item"><a href="men.html" style="color: black;">Hoodies</a></li> <li class="list-item"></li>
+      </ul>
+     </div>
+     <div class="grid-item">
+      <h3>Kids</h3>
+      <ul style="list-style: none;">
+        <li class="list-item"><a href="kids.html" style="color: black;">Dresses</a></li>
+      </ul>
+     </div>
+     <div class="grid-item">
+      <h3>Links</h3>
+      <ul style="list-style: none;">
+        <li class="list-item"><a href="index.html" style="color: black;">Home</a></li>
+        <li class="list-item"><a href="login.html" style="color: black;">Login</a></li>
+        <li class="list-item"><a href="contact.html" style="color: black;">Contact</a></li> <li class="list-item"></li>
+      </ul>
+     </div>
+    </div>
+    <h5 style="text-align: center;height: 20px;padding-top: 20px;border-top: 1px solid black;margin: 20px;">Copyright &#169Ecommerce 2022-23</h5>
+  </footer>
+  <script src="demo.js"></script> 
+   <!--This is script tag--> 
+  <script>
+  toggle=document.querySelector("#toggle");
+  toggle.onclick=function(){
+    navBar=document.querySelector(".navbar");
+    navBar.classList.toggle("active")
+    
+  }
+  function toggleDropdown(){
+    var dropdownContent=document.getElementById("myDropdown");
+    if(dropdownContent.style.display==="block"){
+      dropdownContent.style.display="none";
+    }else{
+      dropdownContent.style.display="block";
+    }
+    
+  }
+  function toggleDropdownx(){
+    var dropdownContent=document.getElementById("myDropdownx");
+    if(dropdownContent.style.display==="block"){
+      dropdownContent.style.display="none";
+    }else{
+      dropdownContent.style.display="block";
+    }
+    
+  }
+  </script>
+</body>
+</html>
